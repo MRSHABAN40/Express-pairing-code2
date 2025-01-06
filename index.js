@@ -36,7 +36,7 @@ const __dirname = dirname(__filename)
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 function createRandomId() {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   let id = ''
   for (let i = 0; i < 10; i++) {
     id += characters.charAt(Math.floor(Math.random() * characters.length))
@@ -164,7 +164,7 @@ async function startnigg(phone) {
           await xlicon.sendMessage(
             xlicon.user.id,
             {
-              text: 'HELLO THERE! 👋 \n\nDO NOT SHARE YOUR SESSION ID WITH ANYONE.\n\nPUT THE ABOVE IN SESSION_ID VAR\n\nTHANKS FOR USING SILENT-SOBX-MD BOT\n\n JOIN SUPPORT CHANNEL:-https://whatsapp.com/channel/0029VaHO5B0G3R3cWkZN970s \n',
+              text: 'HELLO THERE! 👋 \n\nDO NOT SHARE YOUR SESSION ID WITH ANYONE.\n\nPUT THE ABOVE IN SESSION_ID VAR\n\nTHANKS FOR USING MUZAMIL-ZAKHMI-MD BOT\n\n JOIN SUPPORT CHANNEL:-https://whatsapp.com/channel/0029VajJxbM4inotel0srJ2b \n',
             },
             { quoted: guru }
           )
